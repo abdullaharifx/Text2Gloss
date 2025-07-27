@@ -71,16 +71,20 @@ The model uses Adafactor optimizer with mBART-large-50, trained for 5 epochs. Ev
 If you use this work, please consider citing the following paper:
 
 ```bibtex
-@article{wei2024spoken2sign,
-  title={Spoken2Sign: A Multimodal Translation System for Sign Language Production},
-  author={Wei, Fangyun and Liu, Ze and Wu, Binyang and Li, Yuxin and Liu, Yanghao and Qiao, Siyuan and Wang, Xiaolong and Dai, Jifeng and Cao, Yue},
+@article{zuo2024spoken2sign,
+  title={A Simple Baseline for Spoken Language to Sign Language Translation with 3D Avatars},
+  author={Zuo, Ronglai and Wei, Fangyun and Chen, Zenggui and Mak, Brian and Yang, Jiaolong and Tong, Xin},
   journal={arXiv preprint arXiv:2401.04730},
-  year={2024}
+  year={2024},
+  note={Accepted at ECCV 2024},
+  url={https://arxiv.org/abs/2401.04730}
 }
+
+
 
 ```
 
-[Paper Link]([https://arxiv.org/abs/2203.04287](https://arxiv.org/abs/2401.04730))
+[Paper Link](https://arxiv.org/abs/2401.04730)
 
 ---
 
