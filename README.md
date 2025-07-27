@@ -1,6 +1,6 @@
 # Text2Gloss: Gloss Translation using mBART
 
-This project implements a gloss translation system using the mBART model, inspired by the TwoStream-SLR framework ([arXiv:2203.04287](https://arxiv.org/abs/2203.04287)). It is designed to translate spoken or written text into corresponding ASL gloss sequences, which are used in sign language modeling and generation systems.
+This project implements a gloss translation system using the mBART model. It is designed to translate spoken or written text into corresponding ASL gloss sequences, which are used in sign language modeling and generation systems.
 
 ---
 
