@@ -39,7 +39,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Usage
+## Usage
 
 ### 1. Prepare your dataset
 Place a `gloss.csv` file inside the `data/` directory with the following columns:
@@ -60,13 +60,13 @@ This will:
 
 ---
 
-## 📊 Results
+## Results
 
 The model uses Adafactor optimizer with mBART-large-50, trained for 5 epochs. Evaluation scores (BLEU-4 and ROUGE-L) are printed after training.
 
 ---
 
-## 📝 Reference
+## Reference
 
 If you use this work, please consider citing the following paper:
 
@@ -88,7 +88,7 @@ If you use this work, please consider citing the following paper:
 
 ---
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 - [HuggingFace Transformers](https://huggingface.co/transformers/)
 - [Evaluate Library](https://huggingface.co/docs/evaluate/) (BLEU, ROUGE)
@@ -96,10 +96,9 @@ If you use this work, please consider citing the following paper:
 
 ---
 
-## 💬 Contact
+## Contact
 
 Feel free to open an issue or contact the maintainer: [(business.abdullah.arif@gmail.com)]
 
 ---
 
-© 2025 — Text2Gloss Project
