@@ -1,0 +1,17 @@
+torch==1.9.0
+transformers
+datasets
+sentencepiece
+evaluate
+scikit-learn
+tqdm
+pandas
+opencv-python
+moviepy
+easydict
+webvtt-py
+yacs
+wandb
+sacremoses
+sacrebleu
+huggingface-hub
