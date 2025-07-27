@@ -98,7 +98,7 @@ If you use this work, please consider citing the following paper:
 
 ## 💬 Contact
 
-Feel free to open an issue or contact the maintainer: [(https://www.linkedin.com/in/abdullaharifx/)]
+Feel free to open an issue or contact the maintainer: [(business.abdullah.arif@gmail.com)]
 
 ---
 
