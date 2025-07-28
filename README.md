@@ -10,7 +10,7 @@ This project implements a gloss translation system using the mBART model. It is 
 text2gloss/
 ├── data/                 # Input CSV file (gloss.csv)
 ├── models/               # mBART model loader
-├── datasets/             # Custom dataset class
+├── t2g_datasets/             # Custom dataset class
 ├── training/             # Training loop
 ├── evaluation/           # Evaluation using BLEU and ROUGE
 ├── utils/                # Configs and helpers
