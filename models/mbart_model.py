@@ -1,9 +1,7 @@
-from transformers import MBartForConditionalGeneration, MBart50TokenizerFast
+from transformers import MBartForConditionalGeneration, MBartTokenizer
 
-def load_model_and_tokenizer(model_name="facebook/mbart-large-50", lang="en_XX"):
-    tokenizer = MBart50TokenizerFast.from_pretrained(model_name)
+def load_model_and_tokenizer_cc25(model_name="facebook/mbart-large-cc25", lang="en_XX"):
+    tokenizer = MBartTokenizer.from_pretrained(model_name, src_lang=lang, tgt_lang=lang)
     model = MBartForConditionalGeneration.from_pretrained(model_name)
-    tokenizer.src_lang = lang
-    tokenizer.tgt_lang = lang
     model.config.decoder_start_token_id = tokenizer.lang_code_to_id[lang]
     return model, tokenizer
