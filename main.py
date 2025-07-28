@@ -5,15 +5,15 @@ from sklearn.model_selection import train_test_split
 from transformers import Adafactor
 
 from models.mbart_model import load_model_and_tokenizer
-from datasets.text2gloss_dataset import Text2GlossDataset
+from t2g_datasets import Text2GlossDataset
 from training.train import train
 from evaluation.evaluate import evaluate_model
 from utils import config
 
 # Load data
 df = pd.read_csv("data/gloss.csv")
-df['gloss'] = df['GLOSSES'].astype(str).str.strip()
-df['text'] = df['SENTENCE'].astype(str).str.strip()
+df['gloss'] = df['gloss'].astype(str).str.strip()
+df['text'] = df['text'].astype(str).str.strip()
 df = df.drop_duplicates()
 
 # Split
@@ -25,7 +25,7 @@ train_texts, val_texts, train_glosses, val_glosses = train_test_split(
 )
 
 # Load model and tokenizer
-model, tokenizer = load_model_and_tokenizer(model = config.model_name, lang=config.src_lang)
+model, tokenizer = load_model_and_tokenizer(model_name = config.model_name, lang=config.src_lang)
 
 # Datasets and loaders
 train_dataset = Text2GlossDataset(train_texts, train_glosses, tokenizer, max_len=config.max_len)
