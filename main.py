@@ -25,7 +25,7 @@ train_texts, val_texts, train_glosses, val_glosses = train_test_split(
 )
 
 # Load model and tokenizer
-model, tokenizer = load_model_and_tokenizer(lang=config.src_lang)
+model, tokenizer = load_model_and_tokenizer(model = config.model_name, lang=config.src_lang)
 
 # Datasets and loaders
 train_dataset = Text2GlossDataset(train_texts, train_glosses, tokenizer, max_len=config.max_len)
